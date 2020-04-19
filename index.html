@@ -96,10 +96,10 @@
         }
     </style>
     
-    <!-- <div class="waiting">
+    <div class="waiting">
         <h1>Please wait while fetching data ...</h1>
     </div>
- -->
+ 
     <span id="hov">Hover on the map to know specific data</span>
     <!-- ====== -->
 
@@ -160,7 +160,7 @@
     <script>
         function loadmap(){
             $.ajax({
-                url:"https://corona.lmao.ninja/countries",
+                url:"https://corona.lmao.ninja/v2/countries",
                 error:function(){
                     alert("Sorry, Problem with Featching data from API try Again after sometime");
                 },
